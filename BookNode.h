@@ -25,6 +25,10 @@ enum BookDifficulty {
     HARD     // Has 1 path (next1 only) - player is forced
 };
 
+struct Clue {
+    string problem;
+    string solution;
+};
 // ═══════════════════════════════════════════════════════════════════
 // BOOKNODE STRUCT
 // Represents a single book in the library
@@ -41,8 +45,8 @@ struct BookNode {
     // ═══════════════════════════════════════
     // PUZZLE DATA
     // ═══════════════════════════════════════
-    string question;             // The question/puzzle
-    string answer;               // The correct answer
+    Clue* clues;              // Dynamic array of clues
+    int clueCount;            // Number of clues
     
     // ═══════════════════════════════════════
     // POINTERS (Paths to next books)
@@ -61,7 +65,11 @@ struct BookNode {
     // ═══════════════════════════════════════
     BookNode();                                                      // Default constructor
     BookNode(int bookId, BookType bookType, BookDifficulty bookDiff); // Constructor with parameters
-    
+
+    // ═══════════════════════════════════════
+    // DESTRUCTOR (مهم جداً!)
+    // ═══════════════════════════════════════
+    ~BookNode();  // لحذف الـ clues array    
     // ═══════════════════════════════════════
     // HELPER FUNCTIONS
     // ═══════════════════════════════════════
@@ -71,6 +79,13 @@ struct BookNode {
     // Convert enums to strings (for display)
     string getTypeAsString();         // Convert BookType to string
     string getDifficultyAsString();   // Convert BookDifficulty to string
+
+    // ═══════════════════════════════════════
+    // CLUE FUNCTIONS (جديد)
+    // ═══════════════════════════════════════
+    void setClues(int count);           // Allocate clue array
+    void setClue(int index, string problem, string solution);
+    Clue getClue(int index) const;
 };
 
 #endif
