@@ -9,8 +9,8 @@ BookNode::BookNode() {
     id = 0;
     type = INTERMEDIATE;         // Using enum value (no quotes needed)
     difficulty = EASY;           // Using enum value (no quotes needed)
-    question = "";
-    answer = "";
+    clues = nullptr;             // Initialize clue array pointer
+    clueCount = 0;               // No clues initially
     next1 = nullptr;
     next2 = nullptr;
     visited = false;
@@ -24,12 +24,23 @@ BookNode::BookNode(int bookId, BookType bookType, BookDifficulty bookDiff) {
     id = bookId;
     type = bookType;             // Assign enum value directly
     difficulty = bookDiff;       // Assign enum value directly
-    question = "";
-    answer = "";
+    clues = nullptr;             // Initialize clue array pointer
+    clueCount = 0;               // No clues initially
     next1 = nullptr;
     next2 = nullptr;
     visited = false;
     puzzleSolved = false;
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// DESTRUCTOR
+// Frees dynamically allocated clue array
+// ═══════════════════════════════════════════════════════════════════
+BookNode::~BookNode() {
+    if (clues != nullptr) {
+        delete[] clues;          // Free the clue array
+        clues = nullptr;
+    }
 }
 
 // ═══════════════════════════════════════════════════════════════════
@@ -44,8 +55,12 @@ void BookNode::displayInfo() {
     cout << "Visited: " << (visited ? "Yes" : "No") << endl;
     cout << "Puzzle Solved: " << (puzzleSolved ? "Yes" : "No") << endl;
     
-    if (question != "") {
-        cout << "Question: " << question << endl;
+    // Display all clues
+    if (clueCount > 0) {
+        cout << "Clues:" << endl;
+        for (int i = 0; i < clueCount; i++) {
+            cout << "  Clue " << (i + 1) << ": " << clues[i].problem << endl;
+        }
     }
     
     cout << "Next1: " << (next1 != nullptr ? "Connected" : "None") << endl;
@@ -97,4 +112,58 @@ string BookNode::getDifficultyAsString() {
         default:
             return "UNKNOWN";
     }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// SET CLUES
+// Allocates memory for the clue array based on book type/difficulty
+// ═══════════════════════════════════════════════════════════════════
+void BookNode::setClues(int count) {
+    // Free old clues if they exist
+    if (clues != nullptr) {
+        delete[] clues;
+    }
+    
+    clueCount = count;
+    clues = new Clue[count];     // Allocate new array
+    
+    // Initialize with empty strings
+    for (int i = 0; i < count; i++) {
+        clues[i].problem = "";
+        clues[i].solution = "";
+    }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// SET CLUE
+// Sets a specific clue's problem and solution
+// ═══════════════════════════════════════════════════════════════════
+void BookNode::setClue(int index, string problem, string solution) {
+    if (index >= 0 && index < clueCount) {
+        clues[index].problem = problem;
+        clues[index].solution = solution;
+    }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// GET CLUE
+// Returns a specific clue by index
+// ═══════════════════════════════════════════════════════════════════
+Clue BookNode::getClue(int index) const {
+    if (index >= 0 && index < clueCount) {
+        return clues[index];
+    }
+    // Return empty clue if index is invalid
+    Clue emptyClue;
+    emptyClue.problem = "";
+    emptyClue.solution = "";
+    return emptyClue;
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// GET CLUE COUNT
+// Returns the number of clues in this book
+// ═══════════════════════════════════════════════════════════════════
+int BookNode::getClueCount() const {
+    return clueCount;
 }
