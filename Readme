@@ -1,0 +1,25 @@
+# Mystery Library Puzzle
+
+## Project Overview
+This is a text-based adventure game where players navigate a magical library represented as a linked list network. Each "book" is a node with puzzles to solve. The goal is to travel from one of four entrance books to the final mysterious book by solving riddles and choosing paths.
+
+**Key Features:**
+- Dynamic library generated randomly each playthrough.
+- Branching paths: EASY books offer 2 choices; HARD books have 1 path.
+- Puzzle-based progression.
+- Implemented using linked lists with nodes and pointers.
+
+**Book Types:**
+- **ENTRANCE (4 books):** Starting points; player chooses one; each has 1 puzzle.
+- **INTERMEDIATE (10-15 books):** Randomly EASY (2 paths) or HARD (1 path); distributed and connected.
+- **FINAL (1 book):** Ultimate challenge; all paths converge here.
+
+## How the Library is Generated
+The Library class (from Member 2) creates:
+- 4 entrance nodes, each linked to intermediates.
+- 10-15 intermediate nodes, randomly assigned as EASY or HARD.
+- Connections ensure no dead ends, balanced branches, and all paths lead to the final node.
+- Puzzles are loaded from puzzles.txt and shuffled for variety.
+- Random seeding ensures unique playthroughs.
+
+Example Node Connection (ASCII Diagram):

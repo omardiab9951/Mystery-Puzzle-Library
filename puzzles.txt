@@ -1,0 +1,37 @@
+[ENTRANCE]
+Riddle: What has a head, a tail, is brown, and has no legs? | Answer: Penny<grok-card data-id="a3f7f2" data-type="citation_card"></grok-card>
+Riddle: What can you catch but not throw? | Answer: Cold<grok-card data-id="0edebc" data-type="citation_card"></grok-card>
+Riddle: What has hands but can't clap? | Answer: Clock<grok-card data-id="3cb0ea" data-type="citation_card"></grok-card>
+Riddle: What has many teeth but can't bite? | Answer: Comb<grok-card data-id="ec49a7" data-type="citation_card"></grok-card>
+
+[EASY]
+Riddle: What has keys but can’t open locks? | Answer: Piano<grok-card data-id="eb75b1" data-type="citation_card"></grok-card>
+Riddle: What is so fragile that saying its name breaks it? | Answer: Silence<grok-card data-id="621144" data-type="citation_card"></grok-card>
+Riddle: What has a neck but no head? | Answer: Bottle<grok-card data-id="9d56d2" data-type="citation_card"></grok-card>
+Riddle: The more you take, the more you leave behind. What am I? | Answer: Footsteps<grok-card data-id="197b47" data-type="citation_card"></grok-card>
+Riddle: What has one eye but can't see? | Answer: Needle<grok-card data-id="5454a0" data-type="citation_card"></grok-card>
+Riddle: What gets wetter as it dries? | Answer: Towel<grok-card data-id="bb5ee7" data-type="citation_card"></grok-card>
+Riddle: I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I? | Answer: Map<grok-card data-id="71b104" data-type="citation_card"></grok-card>
+Riddle: What can travel around the world while staying in a corner? | Answer: Stamp<grok-card data-id="762a69" data-type="citation_card"></grok-card>
+Riddle: What starts with T, ends with T, and has T inside it? | Answer: Teapot<grok-card data-id="3180d8" data-type="citation_card"></grok-card>
+Riddle: I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I? | Answer: Echo<grok-card data-id="a992a8" data-type="citation_card"></grok-card>
+Riddle: What kind of lion never roars? | Answer: Dandelion<grok-card data-id="506174" data-type="citation_card"></grok-card>
+Riddle: What do you call a bear with no teeth? | Answer: Gummy bear<grok-card data-id="630c56" data-type="citation_card"></grok-card>
+
+[HARD]
+Riddle: If two's company and three's a crowd, what are four and five? | Answer: Nine<grok-card data-id="a7d0f0" data-type="citation_card"></grok-card>
+Riddle: What is there one of in every corner and two of in every room? | Answer: O<grok-card data-id="8bc68b" data-type="citation_card"></grok-card>
+Riddle: I am always hungry, I must always be fed. The finger I touch will soon turn red. What am I? | Answer: Fire<grok-card data-id="f4b03b" data-type="citation_card"></grok-card>
+Riddle: What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps? | Answer: River<grok-card data-id="e1fe54" data-type="citation_card"></grok-card>
+Riddle: A man is looking at a photograph of someone. His friend asks who it is. The man replies, 'Brothers and sisters, I have none. But that man's father is my father's son.' Who was in the photograph? | Answer: Son<grok-card data-id="d830f8" data-type="citation_card"></grok-card>
+Riddle: What word is spelled wrong in every dictionary? | Answer: Wrong<grok-card data-id="b8c697" data-type="citation_card"></grok-card>
+Riddle: If you have me, you want to share me. If you share me, you haven't got me. What am I? | Answer: Secret<grok-card data-id="231b80" data-type="citation_card"></grok-card>
+Riddle: What has a bottom at the top? | Answer: Leg<grok-card data-id="6105f0" data-type="citation_card"></grok-card>
+Riddle: I am something people celebrate or resist. I change people’s thoughts and lives. I am obvious to some people but, to others, I am a mystery. | Answer: Age<grok-card data-id="0d7bd9" data-type="citation_card"></grok-card>
+Riddle: What disappears as soon as you say its name? | Answer: Silence<grok-card data-id="c53342" data-type="citation_card"></grok-card>
+Riddle: We see it once in a year, twice in a week, but never in a day. What is it? | Answer: E<grok-card data-id="bdf919" data-type="citation_card"></grok-card>
+Riddle: Forward I’m heavy, but backward I’m not. What am I? | Answer: Ton<grok-card data-id="cd4ac5" data-type="citation_card"></grok-card>
+
+[FINAL]
+Riddle: I am not alive, but I grow; I don’t have lungs, but I need air; I don’t have a mouth, but water kills me. What am I? | Answer: Fire<grok-card data-id="f95f02" data-type="citation_card"></grok-card>
+Riddle: The person who makes it sells it. The person who buys it never uses it. The person who uses it doesn't know they're using it. What is it? | Answer: Coffin<grok-card data-id="ad652e" data-type="citation_card"></grok-card>
