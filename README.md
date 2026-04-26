@@ -102,7 +102,7 @@ This is a group project developed collaboratively as part of the Data Structures
 
 | Contributor | Role |
 |---|---|
-| **Omar Diab** | Game logic & core data structure implementation |
+| **Omar Diab** | Team Leader · Game logic & core data structure implementation |
 | *Team Members* | Puzzle design · Testing · Documentation |
 
 ---
